@@ -36,17 +36,17 @@ export default defineConfig(({ mode }) => {
             start_url: '/',
             icons: [
               {
-                src: 'https://cdn-icons-png.flaticon.com/512/3050/3050525.png', // Placeholder icon
+                src: 'https://cdn-icons-png.flaticon.com/512/3050/3050525.png',
                 sizes: '192x192',
                 type: 'image/png'
               },
               {
-                src: 'https://cdn-icons-png.flaticon.com/512/3050/3050525.png', // Placeholder icon
+                src: 'https://cdn-icons-png.flaticon.com/512/3050/3050525.png',
                 sizes: '512x512',
                 type: 'image/png'
               },
               {
-                src: 'https://cdn-icons-png.flaticon.com/512/3050/3050525.png', // Placeholder icon
+                src: 'https://cdn-icons-png.flaticon.com/512/3050/3050525.png',
                 sizes: '512x512',
                 type: 'image/png',
                 purpose: 'any maskable'
@@ -62,6 +62,11 @@ export default defineConfig(({ mode }) => {
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
+        }
+      },
+      build: {
+        rollupOptions: {
+          external: ['@google/genai']
         }
       }
     };
