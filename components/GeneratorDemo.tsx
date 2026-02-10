@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GeneratorDemo = () => {
+export const GeneratorDemo = () => {
     return (
         <div>
             {/* Other contents */}
@@ -9,5 +9,3 @@ const GeneratorDemo = () => {
         </div>
     );
 };
-
-export default GeneratorDemo;
