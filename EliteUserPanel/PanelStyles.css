@@ -1,0 +1,37 @@
+
+.elite-panel-container {
+    --ep-brand: #eab308;
+    --ep-bg: #020617;
+    --ep-surface: #0f172a;
+    --ep-border: rgba(234, 179, 8, 0.2);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.elite-grid-card {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--ep-border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.elite-grid-card:hover {
+    border-color: var(--ep-brand);
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.2);
+    transform: translateY(-4px);
+}
+
+.elite-stat-value {
+    text-shadow: 0 0 10px rgba(234, 179, 8, 0.4);
+}
+
+.elite-btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .elite-btn-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
