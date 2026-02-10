@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { ShieldCheck, Globe2 } from 'lucide-react'; 
 import { UI_TRANSLATIONS, getStatusMessages } from '../core/translations';
